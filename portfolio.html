@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse GameFixPro's store for game consoles, accessories, and parts.">
+    <meta name="keywords" content="game store, console sales, retro games, gaming accessories">
+    <title>GameFixPro Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GameFixPro Store</h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="GameFixPro Logo"></a>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="theme-dropdown">
+            <select id="theme-selector" onchange="changeTheme()">
+                <option value="retro">Retro Style</option>
+                <option value="dark">Dark Mode</option>
+            </select>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Our Store</h2>
+        <div class="store-items">
+            <div class="store-item" data-price="99.99">
+                <h3>Retro NES Console</h3>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="store-item" data-price="150.00">
+                <h3>PlayStation 4 Repair</h3>
+                <p>$150.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="filters">
+            <label for="price-filter">Sort by Price:</label>
+            <select id="price-filter">
+                <option value="low-high">Low to High</option>
+                <option value="high-low">High to Low</option>
+            </select>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GameFixPro. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
