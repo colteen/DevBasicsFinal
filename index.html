@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to GameFixPro - Your go-to gaming repair and store.">
+  <meta name="keywords" content="GameFixPro, gaming repair, console repair, gaming store">                                       
+  <title>GAMEFIXPRO</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>GameFixPro</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="GameFixPro Logo"></a>
+    </div>
+    <ul class="navbar-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Store</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="theme-dropdown">
+        <select id="theme-selector" onchange="changeTheme()">
+            <option value="retro">Retro Style</option>
+            <option value="dark">Dark Mode</option>
+        </select>
+    </div>
+    <div class="hamburger" onclick="toggle-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>Welcome!</h2>
+    <p>Gaming Repair and Store</p>
+    <section class="cta">
+      <a href="services.html" class="button">View Services</a>
+      <a href="portfolio.html" class="button">Visit Store</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 GameFixPro. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
